@@ -14,16 +14,24 @@
             <a href="#" class="logo">OMKAR SINGH</a>
             
             <nav>
-                <ul class="navbar" id="navbar">
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#resume">Resume</a></li>
-                    <li><a href="#contact">Contact Me</a></li>
-                </ul>
-                
-                <button class="mobile-menu-toggle" id="mobile-menu-toggle">
-                    ☰
-                </button>
+              <ul class="navbar" id="navbar">
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#contact">Contact Me</a></li>
+              </ul>
+
+              <button
+                class="mobile-menu-toggle"
+                id="mobile-menu-toggle"
+                aria-expanded="false"
+                aria-controls="navbar"
+                aria-label="Open menu"
+              >
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+              </button>
             </nav>
         </div>
     </header>
@@ -33,20 +41,20 @@
         <div class="about-container">
             <div class="about-content">
                 <h1>Hi, I'm <span class="highlight">Omkar</span></h1>
-                <h2>Full Stack Developer & Designer</h2>
+                <h2>Data Analyst</h2>
                 <p>
-                    Welcome to my portfolio! I'm a passionate developer with expertise in creating 
-                    innovative web solutions and bringing ideas to life through code. With a strong 
-                    foundation in both front-end and back-end technologies, I love crafting 
-                    user-friendly applications that make a difference.
+                    Welcome to my portfolio! I'm a passionate Data Analyst with expertise in creating 
+                    innovative data solutions and bringing ideas to life through analysis. With a strong 
+                    foundation in both data visualization and statistical analysis, I love crafting 
+                    user-friendly reports that make a difference.
                 </p>
                 <p>
-                    I specialize in modern web technologies including <span class="highlight">React, Node.js, 
-                    Python, and JavaScript</span>. My goal is to build scalable, efficient, and 
-                    beautiful applications that solve real-world problems.
+                    I specialize in modern data tools and technologies including <span class="highlight">Tableau, Power BI, 
+                    Python, and SQL</span>. My goal is to build scalable, efficient, and 
+                    beautiful dashboards that solve real-world problems.
                 </p>
                 <p>
-                    When I'm not coding, you can find me exploring new technologies, contributing to 
+                    When I'm not analyzing data, you can find me exploring new technologies, contributing to 
                     open-source projects, or sharing my knowledge with the developer community.
                 </p>
                 <a href="#contact" class="cta-button">Get In Touch</a>
@@ -62,6 +70,101 @@
         </div>
     </section>
 
+    <!-- Projects Section -->
+    <section class="projects-section" id="projects">
+      <div class="container">
+        <h2 class="section-title">Projects</h2>
+        <p class="section-intro">Some recent work showcasing dashboards, analysis, and data storytelling.</p>
+
+        <div class="projects-grid">
+          <article class="project-card">
+            <h3 class="project-title">E-Commerce Sales Insight</h3>
+            <p class="project-desc">Collected, cleaned, and analyzed e-commerce sales dataset using Python (Pandas).</p>
+            <ul class="project-tags">
+              <li>Plotly</li><li>Pandas</li>
+            </ul>
+            <div class="project-links">
+              <a href="https://github.com/Omkarsingh07/e-commerce-sales-analysis" target="_blank" class="proj-btn">Code</a>
+              <a href="" target="_blank" class="proj-btn alt">Live</a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <h3 class="project-title">Customer Churn Analysis</h3>
+            <p class="project-desc">Python-based churn prediction using logistic regression and feature engineering on telecom data.</p>
+            <ul class="project-tags">
+              <li>Python</li><li>Pandas</li><li>ML</li>
+            </ul>
+            <div class="project-links">
+              <a href="" target="_blank" class="proj-btn">Code</a>
+              <a href="" target="_blank" class="proj-btn alt">Report</a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <h3 class="project-title">SQL Marketing Insights</h3>
+            <p class="project-desc">Advanced SQL queries uncovering campaign ROI, retention cohorts, and lifetime value metrics.</p>
+            <ul class="project-tags">
+              <li>SQL</li><li>Analytics</li><li>Cohorts</li>
+            </ul>
+            <div class="project-links">
+              <a href="" target="_blank" class="proj-btn">Code</a>
+              <a href="" target="_blank" class="proj-btn alt">Summary</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Resume Section -->
+    <section class="resume-section" id="resume">
+        <div class="container">
+            <h2 class="section-title">Resume</h2>
+            <p class="section-intro">My journey as a Data Analyst, showcasing my skills, experience, and education.</p>
+
+            <div class="resume-content">
+                <div class="resume-item">
+                    <h3>Work Experience</h3>
+                    <div class="resume-timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-year">June 2025 - July 2025</div>
+                            <div class="timeline-content">
+                                <h4>Data Analyst intern | Tax-O-Smart</h4>
+                                <p>
+                                    - Collecting, cleaning, and structuring large volumes of client financial data using tools
+like Excel, SQL, and Python..<br>
+                                    - Visited IDBI Bank as part of an external audit assignment.
+                                </p>
+                            </div>
+                        </div>
+                </div>
+
+                <div class="resume-item">
+                    <h3>Education</h3>
+                    <div class="resume-education">
+                        <div class="education-item">
+                            <div class="education-year">2022 - 2026</div>
+                            <div class="education-content">
+                                <h4>Bachelor of Science in Information Technology</h4>
+                                <p>Rajasthan Technical University</p>
+                            </div>
+                        </div>
+                </div>
+
+                <div class="resume-item">
+                    <h3>Skills</h3>
+                    <ul class="skills-list">
+                        <li>Data Visualization: Tableau, Power BI, </li>
+                        <li>Programming: Python (Pandas, NumPy, Plotly, Matplotlib), SQL</li>
+                        <li>Tools: Git, Excel, Jupyter Notebook</li>
+                    </ul>
+                </div>
+            </div>
+
+            <a href="assets/ResumeDA.pdf" class="cta-button" download>Download Resume</a>
+        </div>
+    </section>
+
     <!-- Footer with Contact Details -->
     <footer class="footer-bottom" id="contact">
         <div class="footer-container">
@@ -69,16 +172,16 @@
                 <div class="footer-brand">
                     <h3>Omkar Singh</h3>
                     <div class="footer-social">
-                        <a href="https://linkedin.com/in/omkarsingh" title="LinkedIn" target="_blank">
+                        <a href="https://linkedin.com/in/omkar-singh9192" title="LinkedIn" target="_blank">
                             <i class="fab fa-linkedin-in"></i>
                         </a>
-                        <a href="https://github.com/omkarsingh" title="GitHub" target="_blank">
+                        <a href="https://github.com/Omkarsingh07?tab=repositories" title="GitHub" target="_blank">
                             <i class="fab fa-github"></i>
                         </a>
-                        <a href="https://twitter.com/omkarsingh" title="Twitter" target="_blank">
+                        <a href="" title="Twitter" target="_blank">
                             <i class="fab fa-twitter"></i>
                         </a>
-                        <a href="https://instagram.com/omkarsingh" title="Instagram" target="_blank">
+                        <a href="" title="Instagram" target="_blank">
                             <i class="fab fa-instagram"></i>
                         </a>
                     </div>
@@ -114,28 +217,70 @@
     </footer>
 
     <script>
-        // Mobile menu toggle functionality
-        const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
-        const navbar = document.getElementById('navbar');
-        
-        mobileMenuToggle.addEventListener('click', () => {
-            navbar.classList.toggle('active');
-        });
-        
-        // Close mobile menu when clicking on a link
-        const navLinks = document.querySelectorAll('.navbar a');
-        navLinks.forEach(link => {
-            link.addEventListener('click', () => {
-                navbar.classList.remove('active');
-            });
-        });
-        
-        // Close mobile menu when clicking outside
-        document.addEventListener('click', (e) => {
-            if (!e.target.closest('.navbar') && !e.target.closest('.mobile-menu-toggle')) {
-                navbar.classList.remove('active');
-            }
-        });
-    </script>
+// Mobile menu improvements
+const menuBtn = document.getElementById('mobile-menu-toggle');
+const nav = document.getElementById('navbar');
+let lastFocusedEl = null;
+
+const focusableSelector = 'a[href]';
+function openMenu() {
+  lastFocusedEl = document.activeElement;
+  menuBtn.setAttribute('aria-expanded', 'true');
+  document.body.classList.add('no-scroll');
+  nav.dataset.open = 'true';
+  const firstLink = nav.querySelector(focusableSelector);
+  if (firstLink) firstLink.focus();
+}
+
+function closeMenu() {
+  menuBtn.setAttribute('aria-expanded', 'false');
+  document.body.classList.remove('no-scroll');
+  nav.dataset.open = 'false';
+  if (lastFocusedEl) lastFocusedEl.focus();
+}
+
+function toggleMenu() {
+  const expanded = menuBtn.getAttribute('aria-expanded') === 'true';
+  expanded ? closeMenu() : openMenu();
+}
+
+menuBtn.addEventListener('click', toggleMenu);
+
+// Close when clicking outside
+document.addEventListener('click', e => {
+  if (window.matchMedia('(min-width:768px)').matches) return;
+  if (!nav.contains(e.target) && !menuBtn.contains(e.target) && nav.dataset.open === 'true') {
+    closeMenu();
+  }
+});
+
+// Close on Esc
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape' && nav.dataset.open === 'true') {
+    closeMenu();
+  }
+  // Simple focus trap
+  if (e.key === 'Tab' && nav.dataset.open === 'true') {
+    const focusables = [...nav.querySelectorAll(focusableSelector)];
+    if (focusables.length === 0) return;
+    const first = focusables[0];
+    const last = focusables[focusables.length - 1];
+    if (e.shiftKey && document.activeElement === first) {
+      e.preventDefault();
+      last.focus();
+    } else if (!e.shiftKey && document.activeElement === last) {
+      e.preventDefault();
+      first.focus();
+    }
+  }
+});
+
+// Reset state on resize to desktop
+window.addEventListener('resize', () => {
+  if (window.innerWidth >= 768) {
+    closeMenu();
+  }
+});
+</script>
 </body>
 </html>
